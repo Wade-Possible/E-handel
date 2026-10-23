@@ -4,7 +4,7 @@ def add_time_columns(df):
     result = df.copy()  # make a copy so the original table is not changed
     result["month_number"] = result["date"].dt.month  # month as a number for sorting
     result["month_name"] = result["date"].dt.month_name()
-    result["weekday_number"] = result["date"].dt.weekday +1 # day as a number for sorting
+    result["weekday_number"] = result["date"].dt.weekday + 1 # day as a number for sorting
     result["weekday_name"] = result["date"].dt.day_name()
 
     return result
@@ -17,9 +17,9 @@ def summarize_revenue(df, group_columns):
             total_units = ("units", "sum"),
             order_count = ("order_id", "count")
         )
-        .reset_index()  # turn the week labels back into normal columns
+        .reset_index()  # turn the group labels back into normal columns
     )
     summary["average_order_value"] = summary["total_revenue"] / summary["order_count"]
-    summary = summary.round(2)
+    summary = summary.round({"total_revenue": 2, "average_order_value": 2}) # round only the money columns
 
     return summary
