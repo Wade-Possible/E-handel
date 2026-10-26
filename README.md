@@ -12,4 +12,4 @@
 
 ## Roller och ansvar
 
-Roshima: Fråga 4, genomsnittligt ordervärde (AOV) och spridning, inklusive histogram, boxplot och funktionerna `compute_aov`, `find_outliers` och `order_spread`
+* Roshima: Fråga 4, genomsnittligt ordervärde (AOV) och spridning, inklusive histogram, boxplot och funktionerna `compute_aov`, `find_outliers` och `order_spread`
