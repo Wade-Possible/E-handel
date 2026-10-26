@@ -8,6 +8,7 @@ def add_time_columns(df):
     result["month_name"] = result["date"].dt.month_name()  # month as a name, ex. January
     result["weekday_number"] = result["date"].dt.weekday + 1  # day as a number for sorting, 1 = Monday
     result["weekday_name"] = result["date"].dt.day_name()  # day as a name, ex. Monday
+    result["week_number"] = result["date"].dt.isocalendar().week  # week of the year (week 1 starts on Monday 1 January 2024)
 
     return result
 
@@ -23,6 +24,7 @@ def summarize_revenue(df, group_columns):
         .reset_index()  # turn the group labels back into normal columns
     )
     summary["average_order_value"] = summary["total_revenue"] / summary["order_count"]
-    summary = summary.round({"total_revenue": 2, "average_order_value": 2})  # round only the money columns
+    summary["total_revenue"] = summary["total_revenue"].round(2)
+    summary["average_order_value"] = summary["average_order_value"].round(2)
 
     return summary
