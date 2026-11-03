@@ -37,7 +37,7 @@ Vi har använt Python 3.14.7 för att analysera datan och skapat tabeller och di
 
 * Christoffer: Ansvarat för fråga 1 (Vad säljer vi?) och fråga 5 (Topp-listor), där jag tagit fram försäljningen per kategori och visualiserat de tre kategorier som har högst intäkter. Jag har även ansvarat för att förbereda projektet inför inlämning genom att sammanställa gruppens olika delar i report.ipynb, lägga in funktioner från src, strukturera rapporten och kontrollera att koden fungerar.
 
-* Wansiri – När säljer vi?:
+* Wansiri – Fråga 3 (När säljer vi?):
             1. Ansvarade för frågan om tidsmönster i försäljningen (januari–juni 2024).
             2. Kontrollerade datumen, la till månad, veckodag och vecka, och summerade intäkten per månad, vecka och veckodag. Gjorde tre diagram samt snitt och median per dag och vecka
             3. Skrev funktionerna i `src/time_analysis.py` och `src/time_charts.py`.
