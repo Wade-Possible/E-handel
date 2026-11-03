@@ -35,7 +35,7 @@ Vi har använt Python 3.14.7 för att analysera datan och skapat tabeller och di
 
 * Roshima: Fråga 4, genomsnittligt ordervärde (AOV) och spridning, inklusive histogram, boxplot och funktionerna `compute_aov`, `find_outliers` och `order_spread`
 
-* Christoffer: Ansvarat för fråga 1 (Vad säljer vi?) och fråga 5 (Topp-listor), inklusive analys och visualisering av försäljningen per kategori samt de tre kategorier som genererat högst intäkter. Har även ansvarat för att sammanställa gruppens arbete i report.ipynb, integrera kod och funktioner samt kontrollera rapporten inför inlämning.
+* Christoffer: Ansvarat för fråga 1 (Vad säljer vi?) och fråga 5 (Topp-listor), där jag tagit fram försäljningen per kategori och visualiserat de tre kategorier som har högst intäkter. Jag har även ansvarat för att förbereda projektet inför inlämning genom att sammanställa gruppens olika delar i report.ipynb, lägga in funktioner från src, strukturera rapporten och kontrollera att koden fungerar.
 
 * Wansiri – När säljer vi?:
             1. Ansvarade för frågan om tidsmönster i försäljningen (januari–juni 2024).
