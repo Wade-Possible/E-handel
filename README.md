@@ -33,11 +33,28 @@ Vi har använt Python 3.14.7 för att analysera datan och skapat tabeller och di
 
 ## Roller och ansvar
 
-* Roshima: Fråga 4, genomsnittligt ordervärde (AOV) och spridning, inklusive histogram, boxplot och funktionerna `compute_aov`, `find_outliers` och `order_spread`
+* Roshima – Fråga 4 (Genomsnittligt ordervärde och spridning):
+    1. Ansvarade för att analysera genomsnittligt ordervärde (AOV) och spridningen i försäljningsdata.
+    2. Skapade histogram och boxplot för att visualisera ordervärdenas fördelning och spridning.
+    3. Skrev funktionerna `compute_aov`, `find_outliers` och `order_spread`
 
-* Christoffer: Ansvarat för fråga 1 (Vad säljer vi?) och fråga 5 (Topp-listor), där jag tagit fram försäljningen per kategori och visualiserat de tre kategorier som har högst intäkter. Jag har även ansvarat för att förbereda projektet inför inlämning genom att sammanställa gruppens olika delar i report.ipynb, lägga in funktioner från src, strukturera rapporten och kontrollera att koden fungerar.
+* Christoffer – Fråga 1 (Vad säljer vi?) och fråga 5 (Topp-listor):
+    1. Ansvarade för att analysera försäljningen per kategori och identifiera vilka kategorier som genererar högst intäkter.
+    2. Skapa en graf över de tre kategorierna med högst intäkter.
+    3. Ansvarade för att sammanställa gruppens olika delar i report.ipynb, integrera funktioner från src, strukturera rapporten och kontrollera att koden fungerar.
+    4. Förberedde projektet inför inlämning och arbetade med README.md.
 
 * Wansiri – Fråga 3 (När säljer vi?):
-            1. Ansvarade för frågan om tidsmönster i försäljningen (januari–juni 2024).
-            2. Kontrollerade datumen, la till månad, veckodag och vecka, och summerade intäkten per månad, vecka och veckodag. Gjorde tre diagram samt snitt och median per dag och vecka
-            3. Skrev funktionerna i `src/time_analysis.py` och `src/time_charts.py`.
+    1. Ansvarade för frågan om tidsmönster i försäljningen (januari–juni 2024).
+    2. Kontrollerade datumen, la till månad, veckodag och vecka, och summerade intäkten per månad, vecka och veckodag. Gjorde tre diagram samt snitt och median per dag och vecka
+    3. Skrev funktionerna i `src/time_analysis.py` och `src/time_charts.py`.
+
+* Jordan – Fråga 6 (Eventuella avvikelser):
+    1. Analysera försäljningsdata för att beräkna avvikelser (anomalier) i dagsintäkter och visualisera i ett diagram.
+    2. Skapade klassen `SalesDataAnalyzer` med metoderna `get_revenue_bounds()`, `compute_anomalies()` och `plot_anomalies()`.
+    3. Beräknar kvartiler (Q1, Q3) och karterar undre/övre gränser för intäkter. Identifierar avvikande dagsintäkter med hjälp av Z-score (`> 2.5` standardavvikelser). Skapar en graf med Matplotlib som markerar avvikande dagar med blå punkter.
+
+* Felicia - Fråga 2 (Intäktsanalys per stad):
+    1. Implementerat kod med pandas för att läsa in försäljningsdata från CSV.
+    2. Grupperat data efter stad “city” och summerat de totala intäkterna “revenue”.
+    3. Sorterat och presenterat resultatet för att visa vilka städer som genererar störst int
